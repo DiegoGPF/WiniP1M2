@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd4d2818687408340aa08922b37ab9ac, type: 3}
+  m_Name: DarkMagician
+  m_EditorClassIdentifier: 
+  name: Dark Magician Girl
+  description: This card gains 300 ATK for every "Dark Magician" o "Dark Magician
+    of Black Chaos" in either players Graveyard
+  nivel: Nivel 9000
+  bgcolor: {r: 0.31287822, g: 0.745283, b: 0.5675825, a: 1}
+  tipo: Hola / Quiubo
+  atk: 2000
+  def: 1700
+  image: {fileID: 21300000, guid: 3511fb7e139b9764083896349455bb8f, type: 3}
+  logo: {fileID: 21300000, guid: dc05dc77183f593469b9ee238b92ff7e, type: 3}
+  star: {fileID: 21300000, guid: 82f38062956a8c649a5864e656db35f3, type: 3}
+  starn: 2
