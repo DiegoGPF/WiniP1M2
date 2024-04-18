@@ -16,7 +16,7 @@ public class CharacterMovement : MonoBehaviour
     float turnSmoothVelocity;
 
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundDistance = 0.4f;
+    [SerializeField] private float groundDistance = 0.2f;
     [SerializeField] private LayerMask groundMask;
 
     Vector3 velocity;
@@ -41,8 +41,6 @@ public class CharacterMovement : MonoBehaviour
                 float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
                 transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
-
-                
 
                 controller.Move(direction * speed * Time.deltaTime);
 
