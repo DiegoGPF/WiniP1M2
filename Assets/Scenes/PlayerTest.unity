@@ -794,6 +794,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4020689133146171553, guid: 44bc6d0398a08404ea346cb6c207f8d4, type: 3}
+      propertyPath: sceneViewId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4020689133146171553, guid: 44bc6d0398a08404ea346cb6c207f8d4, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4742139120571450855, guid: 44bc6d0398a08404ea346cb6c207f8d4, type: 3}
       propertyPath: m_RootOrder
       value: 7

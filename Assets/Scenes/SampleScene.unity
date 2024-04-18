@@ -608,7 +608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7494d865d2c17a241a9c8ca2a70cc1b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 4637579496801370041, guid: 50bc6430cf129ed45a8be717bcce5731, type: 3}
+  player: {fileID: 5369600047205146461, guid: 44bc6d0398a08404ea346cb6c207f8d4, type: 3}
   minX: -3.35
   maxX: 4.07
   minZ: 3.91
