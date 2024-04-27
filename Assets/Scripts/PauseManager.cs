@@ -1,29 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
+    public static bool GameIsPaused = false;
 
-    [SerializeField] private GameObject pause;
-    private bool clickedOnce = false;
+    public  GameObject pauseMenuUI;
 
     private void Update()
     {
-        if (Input.GetButtonDown("Pause"))
+        if (Input.GetKeyDown(KeyCode.JoystickButton7))
         {
-            if (!clickedOnce)
+            if (GameIsPaused)
             {
-                pause.SetActive(true);
-                Time.timeScale = 0f;
-                clickedOnce = true;
+                Resume();
             }
-            else
+            else 
             {
-                pause.SetActive(false);
-                Time.timeScale = 1f;
-                clickedOnce = false;
+                Pause();
             }
         }
+    }
+
+    void Resume()
+    {
+        pauseMenuUI.SetActive(false);
+        GameIsPaused = false;
+    }
+
+    void Pause()
+    {
+        pauseMenuUI.SetActive(true);
+        GameIsPaused = true;
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
